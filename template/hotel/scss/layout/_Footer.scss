@@ -1,0 +1,24 @@
+footer {
+    background-color: #f1f2f2;
+    height: 43px;
+    color: black;
+
+
+    @include tablet {
+        padding: 20px 0;
+        text-align: center;
+        height: 100px;
+    }
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 40px;
+
+    @include tablet {
+        display: block;
+        text-align: center;
+    }
+}
+

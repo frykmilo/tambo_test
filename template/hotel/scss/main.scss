@@ -1,0 +1,49 @@
+@import "./base/default", "./base/fonts";
+@import "./layout/general", "./layout/Header", "./layout/Hero", "./layout/Book",  "./layout/Accommodations", "./layout/Events", "./layout/Footer",  "./layout/Form";
+
+
+*{
+    font-family: $Montserrat; 
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+h1{
+    font-size: 39px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h1, h2{
+    font-family: $PlayfairDisplay;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-text{
+    font-size: 12px;
+}
+
+p{
+    display: unset;
+}
+

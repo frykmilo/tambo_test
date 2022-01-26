@@ -1,0 +1,55 @@
+.events {
+  text-align: center;
+  margin-bottom: 76px;
+  h4 {
+    font-weight: lighter;
+    letter-spacing: 1px;
+  }
+
+  @include tablet {
+        padding: 0 30px;
+    }
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+  width: 100%;
+
+  @include tablet {
+    grid-template-columns: 100%;
+  }
+}
+
+.events-child {
+  position: relative;
+  .date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #282930;
+    color: white;
+    width: 98px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-size: 49px;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    span {
+      font-size: 18px;
+      position: absolute;
+      top: calc(50% - 11px);
+      right: -4px;
+      transform: rotate(270deg);
+    }
+  }
+}

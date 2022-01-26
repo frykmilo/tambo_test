@@ -1,0 +1,155 @@
+.book-form {
+  h3 {
+    color: white;
+    font-family: $PlayfairDisplay;
+    font-size: 38px;
+    text-align: center;
+    margin-top: 70px;
+    position: relative;
+  }
+  .close-button {
+    overflow: hidden;
+    position: relative;
+    font-family: $Montserrat;
+    border: none;
+    padding: 0;
+    font-size: 20px;
+    border-radius: 50%;
+    background: transparent;
+    color: red;
+    text-indent: 100%;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 10px;
+    position: absolute;
+
+    &:focus {
+      outline: solid 0 transparent;
+      /*box-shadow: 0 0 0 1px #f8fcff*/
+    }
+
+    &:hover {
+      background: rgba(29, 161, 142, 0.1);
+    }
+
+    &:before,
+    &:after {
+      position: absolute;
+      top: 15%;
+      left: calc(50% - 0.0625em);
+      width: 0.125em;
+      height: 70%;
+      border-radius: 0.9em;
+      transform: rotate(45deg);
+      background: currentcolor;
+      content: "";
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.arrival-date {
+  color: white;
+  font-family: $Montserrat;
+  font-size: 15px;
+  text-align: left;
+  width: 225px;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.departure-date {
+  color: white;
+  font-family: $Montserrat;
+  font-size: 15px;
+  text-align: left;
+  width: 225px;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+  margin-top: 33px;
+}
+.arrival-input {
+  display: flex;
+  color: #a8a9ab;
+  width: 225px;
+  height: 38px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.departure-input {
+  display: flex;
+  color: #a8a9ab;
+  width: 225px;
+  height: 38px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.form-selects {
+  flex-direction: row;
+  padding-top: 30px;
+
+  p {
+    color: white;
+    font-family: $Montserrat;
+    font-size: 15px;
+    text-align: left;
+    width: 225px;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  .guest-input {
+    width: 100px;
+    height: 39px;
+    margin-top: 13px;
+    margin-left: 50px;
+    text-align: center;
+    color: #a8a9ab;
+  }
+  #child {
+    width: 100px;
+    height: 39px;
+    margin-left: 22px;
+    text-align: center;
+    color: #a8a9ab;
+  }
+}
+.get {
+  color: #959698;
+  font-family: $PlayfairDisplay;
+  font-size: 16px;
+  text-align: center;
+  width: 225px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 39px;
+  letter-spacing: 0, 999em;
+}
+.form-button {
+  font-family: $PlayfairDisplay;
+  font-size: 16px;
+  border: 2px solid red;
+  color: red;
+  width: 108px;
+  height: 34px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 34px;
+  background-color: #1e1e1e;
+}
+.link-book {
+  color: #959698;
+  font-family: $Montserrat;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 72px;
+}
